@@ -1,0 +1,7 @@
+site_name: mcl-bio
+site_description: Particle filter state estimation for robotics and biomedical signals
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - API: api.md
