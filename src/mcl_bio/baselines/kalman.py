@@ -26,8 +26,8 @@ class KalmanFilter:
         self.h = np.asarray(observation, dtype=float)
         self.q = np.asarray(process_cov, dtype=float)
         self.r = np.asarray(observation_cov, dtype=float)
-        self.x = np.zeros(self.f.shape[0])
-        self.p = np.eye(self.f.shape[0])
+        self.x: NDArray[np.floating] = np.zeros(self.f.shape[0])
+        self.p: NDArray[np.floating] = np.eye(self.f.shape[0])
 
     def initialize(
         self, mean: NDArray[np.floating], cov: NDArray[np.floating] | None = None
